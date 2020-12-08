@@ -1,15 +1,15 @@
-class PageView extends HTMLElement {
-    constructor() {
+class HTMLInclude extends HTMLElement {
+    constructor(src) {
         super();
-        this.attachShadow({ mode: "open" });
+        if (src) this.textContent = src;
         setTimeout(() => this._load());
     }
     async _load() {
-        const page = window.location.search.substring(1);
-        const src = `./pages/${page === "" ? "accueil" : page}.html`;
+        const src = this.textContent.trim();
+        if (!src) throw new Error("URL missing between <html-include> tags.");
         const rsp = await fetch(src);
-        if (rsp.status !== 200) window.location.href = "/";
-        else this.shadowRoot.innerHTML = await rsp.text();
+        if (rsp.status !== 200) throw new Error(`Failed to load file (${src}) for <html-include>.`);
+        this.innerHTML = await rsp.text();
     }
 }
-customElements.define("page-view", PageView);
+customElements.define("html-include", HTMLInclude);
