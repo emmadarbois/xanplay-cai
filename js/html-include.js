@@ -7,9 +7,9 @@ class HTMLInclude extends HTMLElement {
     }
     async _load() {
         const src = this.textContent.trim();
-        if (!src) throw new Error("URL missing between <html-import> tags.");
+        if (!src) throw new Error("URL missing between <html-include> tags.");
         const rsp = await fetch(src);
-        if (rsp.status != 200) throw new Error(`Failed to load file (${src}) for <html-import>.`);
+        if (rsp.status != 200) throw new Error(`Failed to load file (${src}) for <html-include>.`);
         this.shadowRoot.innerHTML = await rsp.text();
     }
 }
