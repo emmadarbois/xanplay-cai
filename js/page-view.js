@@ -8,7 +8,7 @@ class PageView extends HTMLElement {
         const page = window.location.search.substring(1);
         const src = `./pages/${page === "" ? "accueil" : page}.html`;
         const rsp = await fetch(src);
-        if (rsp.status != 200) window.location.href = "/";
+        if (rsp.status !== 200) window.location.href = "/";
         else this.shadowRoot.innerHTML = await rsp.text();
     }
 }
