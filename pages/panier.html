@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8 p-2">
+            <h2>Mon panier</h2>
+            <hr />
+            <div class="list-group list-group-flush">
+                <!-- BEGIN -->
+                <div class="list-group-item">
+                    <div class="row">
+                        <div class="col-auto">
+                            <img src="https://via.placeholder.com/100" alt="foo" width="100" height="100" />
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1"><a href="?jeux/mémoire44" class="no-link">Mémoire
+                                            44</a></h5>
+                                    <span class="font-weight-bold">47,99 €</span>
+                                </div>
+                                <p class="mb-1">
+                                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                                </p>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <div></div>
+                                    <div>
+                                        <button class="btn">-</button>
+                                        <span class="btn" style="cursor: default;">1</span>
+                                        <button class="btn">+</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn">X</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END -->
+            </div>
+        </div>
+        <div class="col bg-light ml-5 p-3 d-inline-block h-auto">
+
+            <h2>Total</h2>
+            <hr />
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Sous-total</h5>
+                <span>47,99 €</span>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Livraison</h5>
+                <span>5 €</span>
+            </div>
+            <hr />
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">À payer</h5>
+                <span>52,99 €</span>
+            </div>
+
+            <div class="btn-group mt-3 w-100" role="group" aria-label="Basic example">
+                <button id="btn_shop" type="button" class="btn btn-success" onclick="btn_target_shop()"><i
+                        class="fa fa-shopping-cart" aria-hidden="true"></i> En
+                    magsin</button>
+                <button id="btn_home" type="button" class="btn btn-secondary" onclick="btn_target_home()"><i
+                        class="fa fa-truck" aria-hidden="true"></i>
+                    Livraison</button>
+            </div>
+
+            <a href="?payment" class="btn btn-success w-100 mt-3">PAIEMENT</a>
+        </div>
+
+    </div>
+</div>
