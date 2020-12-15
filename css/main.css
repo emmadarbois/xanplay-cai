@@ -41,6 +41,10 @@ h4 {
     color: var(--secondary)!important;
 }
 
+.btn-primary {
+    background-color: var(--primary)!important;
+}
+
 
 /*
 .card-header {
