@@ -7,3 +7,12 @@ a.no-link:hover {
     color: blue;
     text-decoration: underline;
 }
+
+.star-on {
+    color: yellow;
+    font-size: 20px;
+}
+
+.star-off {
+    font-size: 20px;
+}
