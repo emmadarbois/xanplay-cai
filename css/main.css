@@ -15,7 +15,7 @@
 
 body {
     font-family: "Gotham Book";
-    background-color: var(--primary);
+    background-color: var(--bs-light);
 }
 
 h1,
@@ -41,6 +41,8 @@ h4 {
     color: var(--secondary)!important;
 }
 
+
+/*
 .card-header {
     background-color: var(--primary)!important;
 }
@@ -49,6 +51,7 @@ h4 {
     background-color: var(--primary)!important;
     border-color: white!important;
 }
+*/
 
 
 /* MISC */
