@@ -1,3 +1,33 @@
+@font-face {
+    font-family: "Gotham Book";
+    src: url("/res/font/Gotham-Book.otf");
+}
+
+@font-face {
+    font-family: "Gotham Bold";
+    src: url("/res/font/Gotham-Bold.otf");
+}
+
+:root {
+    --primary: #45475F;
+    --secondary: #E5B8A8;
+}
+
+body {
+    font-family: "Gotham Book";
+    background-color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Gotham Bold";
+}
+
+
+/* MISC */
+
 a.no-link {
     color: inherit;
     text-decoration: none;
@@ -15,21 +45,4 @@ a.no-link:hover {
 
 .star-off {
     font-size: 20px;
-}
-
-:root {
-    --primary: #45475F;
-    --secondary: #E5B8A8;
-}
-
-body {
-    font-family: 'Gotham Book';
-    background-color: var(--primary);
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Gotham Bold';
 }
