@@ -58,7 +58,17 @@
                 <h5 class="mb-1">À payer</h5>
                 <span>52,99 €</span>
             </div>
-            <button class="btn btn-success w-100 mt-3">PAIEMENT</button>
+
+            <div class="btn-group mt-3 w-100" role="group" aria-label="Basic example">
+                <button id="btn_shop" type="button" class="btn btn-success" onclick="btn_target_shop()"><i
+                        class="fa fa-shopping-cart" aria-hidden="true"></i> En
+                    magsin</button>
+                <button id="btn_home" type="button" class="btn btn-secondary" onclick="btn_target_home()"><i
+                        class="fa fa-truck" aria-hidden="true"></i>
+                    Livraison</button>
+            </div>
+
+            <a href="?payment" class="btn btn-success w-100 mt-3">PAIEMENT</a>
         </div>
 
     </div>
