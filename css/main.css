@@ -16,3 +16,20 @@ a.no-link:hover {
 .star-off {
     font-size: 20px;
 }
+
+:root {
+    --primary: #45475F;
+    --secondary: #E5B8A8;
+}
+
+body {
+    font-family: 'Gotham Book';
+    background-color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Gotham Bold';
+}
