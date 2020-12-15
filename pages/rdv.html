@@ -13,19 +13,20 @@
                 </div>
             </div>
         </div>
-        <div class="col-5">
+        <div class="col-12 col-lg-5">
             <div class="card">
                 <div class="card-body">
                     <h3 class="text-center">Les rendez-vous à venir</h3>
-                    <ul class=”list-inline”>
-                        <li class="list-inline-item card-text">Mercredi 2 décembre: Les jeux de réflexion</li>
-                        <li class="list-inline-item card-text">Mercredi 16 décembre: Les jeux familiaux</li>
-                        <li class="list-inline-item card-text">Mercredi 30 décembre: Les jeux d'aventure</li>
+                    <ul class="list-inline list-group">
+                        <li class="card-text list-group-item">Mercredi 2 décembre: Les jeux de réflexion</li>
+                        <li class="card-text list-group-item">Mercredi 16 décembre: Les jeux rapides</li>
+                        <li class="card-text list-group-item">Mercredi 30 décembre: Les jeux d'aventure</li>
+                        <li class="card-text list-group-item">Mercredi 13 janvier: Les jeux de rôle</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="col-7">
+        <div class="col-12 col-lg-7">
             <div class="card">
                 <div class="card-body text-center">
                     <h3 class="text-center">Revivez les derniers rendez-vous</h3>
@@ -33,24 +34,24 @@
                     Vous pouvez regarder ici le replay des derniers rendez-vous qui ont eu lieu:</p>
                     <div class="row">
                         <div class="col">
-                            <div id="accordion">
+                            <div id="anciens-rdv">
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h5>
-                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <button class="btn btn-link stretched-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             Mercredi 18 novembre: Les jeux à 2
                                             </button>
                                         </h5>
-                                  </div>
-                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    </div>
+                                    <div id="collapseOne" class="collapse show fill" aria-labelledby="headingOne" data-parent="#anciens-rdv">
                                         <div class="card-body">
-                                            <div class="embed-responsive embed-responsive-16by9" >
-                                                <iframe
-                                                    class="embed-responsive-item "
-                                                    style="width:100%;height=100%"
-                                                    src="https://www.youtube.com/embed/lOox4UJVFb4"
-                                                    frameborder="0"
-                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe 
+                                                    width="100%" 
+                                                    height="400px" 
+                                                    src="https://www.youtube.com/embed/IE0dnQLs7-8" 
+                                                    frameborder="0" 
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                                     allowfullscreen>
                                                 </iframe>
                                             </div>
@@ -60,19 +61,20 @@
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
                                         <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Mercredi 4 novembre: Les jeux rapides
+                                            <button class="btn btn-link collapsed  stretched-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Mercredi 4 novembre: Les jeux pour enfants
                                             </button>
                                         </h5>
                                     </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#anciens-rdv">
                                         <div class="card-body">
                                             <div class="embed-responsive embed-responsive-16by9">
-                                                <iframe
-                                                    class="embed-responsive-item"
-                                                    src="https://www.youtube.com/embed/lOox4UJVFb4"
+                                                <iframe 
+                                                    width="100%"
+                                                    height="400px"
+                                                    src="https://www.youtube.com/embed/Y7GVX4UbJEY"
                                                     frameborder="0"
-                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                                     allowfullscreen>
                                                 </iframe>
                                             </div>
@@ -82,19 +84,19 @@
                                 <div class="card">
                                     <div class="card-header" id="headingThree">
                                         <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Mercredi 21 octobre: Les jeux de rôle
+                                            <button class="btn btn-link collapsed  stretched-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Mercredi 21 octobre: Les jeux de coopération
                                             </button>
                                         </h5>
                                     </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#anciens-rdv">
                                         <div class="card-body">
                                             <div class="embed-responsive embed-responsive-16by9">
                                                 <iframe
-                                                    class="embed-responsive-item"
-                                                    src="https://www.youtube.com/embed/lOox4UJVFb4"
-                                                    frameborder="0"
-                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    width="100%"
+                                                    height="400px"
+                                                    src="https://www.youtube.com/embed/AZt83_HLKqA" 
+                                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                                     allowfullscreen>
                                                 </iframe>
                                             </div>
