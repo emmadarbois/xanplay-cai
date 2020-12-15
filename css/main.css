@@ -41,6 +41,15 @@ h4 {
     color: var(--secondary)!important;
 }
 
+.card-header {
+    background-color: var(--primary)!important;
+}
+
+.card {
+    background-color: var(--primary)!important;
+    border-color: white!important;
+}
+
 
 /* MISC */
 
