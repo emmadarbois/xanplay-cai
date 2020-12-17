@@ -1,18 +1,29 @@
-var user = document.getElementsByName("user")[0];
-var mdp = document.getElementsByName("mdp")[0];
-var btn_connect = document.getElementById("connect");
-var btn_no_account = document.getElementById("create_account");
+document.addEventListener("DOMContentLoaded", () => {
+    console.log(1)
+    var user = document.getElementsByName("user")[0];
+    var mdp = document.getElementsByName("mdp")[0];
+    var btn_connect = document.getElementById("btn_connect");
+    var btn_no_account = document.getElementById("create_account");
 
-btn_connect.onclick = () => {
-    console.log('in')
-    if ((user.value === "admin") && (mdp.value === "admin")) {
-        window.location.href="?account";
-    }
-    else {
-        window.alert("Aucun compte ne correspond à cette adresse !");
-    }
-}
+    console.log(user.value)
+    console.log(mdp.value)
+    console.log(btn_connect)
+    console.log(btn_no_account)
 
-btn_no_account.onclick = () => {
-    window.alert("Nous ne pouvons créer de nouveau compte pour le moment.")
-}
+    console.log(2)
+
+    btn_connect.onclick = () => {
+        console.log('in')
+        if ((user.value === "admin") && (mdp.value === "admin")) {
+            window.location.href="?account";
+        }
+        else {
+            window.alert("Aucun compte ne correspond à cette adresse !");
+        }
+    }
+
+    console.log(3)
+    btn_no_account.onclick = () => {
+        window.alert("Nous ne pouvons créer de nouveau compte pour le moment.")
+    }
+});
