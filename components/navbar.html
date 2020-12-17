@@ -8,12 +8,12 @@
             
             <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
                 <li class="nav-item mx-2"> 
-                    <form class="d-flex">
-                        <input class="form-control mx-2" type="search" placeholder="Search" aria-label="Search">
-                        <a class="btn" href="?recherche" type="submit">
-                            <img src="res/navbar/loupe.png" width="30" height="30" >
-                        </a>
-                    </form>
+                    <input id="input_search" class="form-control mx-2" placeholder="Search">
+                </li>
+                <li class="nav-item mx-2">
+                    <button type="button" class="btn" onclick="search('input_search')">
+                        <img src="res/navbar/loupe.png" width="30" height="30" >
+                    </button>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="btn nav-link" href="?panier">
@@ -46,4 +46,8 @@
         </div>
     </div>
 </nav>
+</div>
+
+<div id="alert_error_search" style="display: none;" class="alert alert-warning">
+    Erreur lors de la recherche
 </div>
