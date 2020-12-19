@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("pageViewRendered", () => {
     console.log(1)
     var user = document.getElementsByName("user")[0];
     var mdp = document.getElementsByName("mdp")[0];
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btn_connect.onclick = () => {
         console.log('in')
-        if ((user.value === "admin") && (mdp.value === "admin")) {
+        if ((user.value === "sebastien@kubiki.xanplay.fr") && (mdp.value === "caiENIB2020")) {
             window.location.href="?account";
         }
         else {
