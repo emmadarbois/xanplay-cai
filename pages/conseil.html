@@ -1,3 +1,5 @@
+<div style="display: none;" class="alert alert-success" id="alert_send_success">Votre message a bien été envoyé !</div>
+
 <div class="container mt-3">
     <div class="row">
         <div class="col text-center">
@@ -124,8 +126,8 @@
                               <div class="accordion-body">
                                 <div class="mb-3">
                                   <form>
-                                    <textarea class="form-control" rows="3"></textarea>
-                                    <button type="submit" class="btn btn-primary">Send</button>
+                                    <textarea class="form-control" id="request_message_olivier" rows="3"></textarea>
+                                    <a href="#" class="btn btn-primary" onclick="send_request('request_message_olivier')">Send</a>
                                   </form>
                                 </div>
                               </div>
@@ -152,16 +154,16 @@
                         <div class="accordion accordion-flush">
                           <div class="accordion-item">
                             <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-askHelpOne">
+                              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-askHelpTwo">
                                 Demander conseil par message
                               </button>
                             </h2>
-                            <div id="flush-askHelpOne" class="accordion-collapse collapse">
+                            <div id="flush-askHelpTwo" class="accordion-collapse collapse">
                               <div class="accordion-body">
                                 <div class="mb-3">
                                   <form>
-                                    <textarea class="form-control" rows="3"></textarea>
-                                    <button type="submit" class="btn btn-primary">Send</button>
+                                    <textarea class="form-control" id="request_message_lucie" rows="3"></textarea>
+                                    <a href="#" class="btn btn-primary" onclick="send_request('request_message_lucie')">Send</a>
                                   </form>
                                 </div>
                               </div>
