@@ -14,7 +14,7 @@ document.addEventListener("pageViewRendered", () => {
 
     btn_connect.onclick = () => {
         console.log('in')
-        if ((user.value === "sebastien@kubiki.xanplay.fr") && (mdp.value === "caiENIB2020")) {
+        if ((user.value === "admin") && (mdp.value === "admin")) {
             window.location.href="?account";
         }
         else {
