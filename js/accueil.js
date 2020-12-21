@@ -1,26 +1,18 @@
-var ladate=new Date()
-var imgPromo = document.getElementById('imgPromo');
-var txtPromo1 = document.getElementById('txtPromo1');
-var txtPromo2 = document.getElementById('txtPromo2');
+document.addEventListener("pageViewRendered", () => {
+    var ladate=new Date()
+    console.log(1)
+    //var myImg = document.getElementById('myImg');
+    var myTxtPromo = document.getElementById('myTxt');
 
 
-if (ladate.getDate()%3 == 0){
-    console.log("bonjour");
-    imgPromo.src = "res/7-wonders.jpg";
-    txtPromo1.innerHTML = "bonjour\n bonjour";
-    txtPromo2.innerHTML = "bonjour2";
-}
-else if (ladate.getDate()%3 == 1) {
-    console.log("salut");
-    imgPromo.src = "../res/labyrinthe.jpg";
-    txtPromo1.innerHTML = "salut\n salut";
-    txtPromo2.innerHTML = "salut2";
-}
-else {
-    console.log("coucou");
-    imgPromo.src = "res/blanc-manger-coco.jpg";
-    txtPromo1.innerHTML = "coucou\n coucou";
-    txtPromo2.innerHTML = "coucou2";
-}
-
-
+    if (ladate.getDate()%3 == 0){
+        myTxtPromo.innerHTML = "bonjour";
+       // myImg.src = "res/img/jeux/7-wonders.jpg";
+    }
+    else if (ladate.getDate()%3 == 1) {
+        myTxtPromo.innerHTML = "salut";
+    }
+    else {
+        myTxtPromo.innerHTML = "coucou";
+    }
+});
