@@ -1,3 +1,5 @@
+const renderedEvent = new Event("pageViewRendered");
+
 class PageView extends HTMLElement {
     constructor() {
         super();
@@ -9,6 +11,7 @@ class PageView extends HTMLElement {
         const rsp = await fetch(src);
         if (rsp.status !== 200) window.location.href = "/";
         this.innerHTML = await rsp.text();
+        document.dispatchEvent(renderedEvent);
     }
 }
 customElements.define("page-view", PageView);

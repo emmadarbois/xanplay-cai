@@ -1,49 +1,53 @@
-<div class=" sticky-top">
-    <nav class="navbar navbar-expand sticky-top navbar-light bg-primary">
+<div class="sticky-top">
+    <nav class="navbar navbar-expand sticky-top navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
                 <img src="res/img/logo.png" height="40">
             </a>
             <div class="collapse navbar-collapse ">
 
-                <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
                     <li class="nav-item mx-2">
-                        <form class="d-flex">
-                            <input class="form-control mx-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn" type="submit">
-                                <i class="fa fa-search" style="font-size: 30px;"></i>
-                            </button>
-                        </form>
+                        <input id="input_search" class="form-control mx-2" placeholder="Search">
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="btn nav-link" href="?foo">
+                        <button type="button" class="btn" onclick="search('input_search')">
+                            <i class="fa fa-search" style="font-size: 30px;"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="btn nav-link" href="?panier">
                             <i class="fa fa-shopping-cart" style="font-size: 30px;"></i>
                         </a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="btn nav-link text-secondary" href="?compte">Mon compte</a>
+                        <a class="btn nav-link" href="?connection">Mon compte</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-expand navbar-light bg-primary border-top border-bottom">
-        <div class="navbar-nav container-fluid">
+    <nav class="navbar navbar-expand navbar-light bg-light border-top border-bottom ">
+        <div class="navbar-nav d-flex justify-content-evenly w-100">
             <div class="nav-item">
-                <a class="nav-link text-secondary" href="?goo">Catalogue</a>
+                <a class="nav-link" href="?catalogue">Catalogue</a>
             </div>
             <div class="nav-item">
-                <a class="nav-link text-secondary" href="#">Demander conseil</a>
+                <a class="nav-link" href="?conseil">Demander conseil</a>
             </div>
             <div class="nav-item">
-                <a class="nav-link text-secondary" href="#">Rendez-vous partage</a>
+                <a class="nav-link" href="?rdv">Rendez-vous partage</a>
             </div>
             <div class="nav-item">
-                <a class="nav-link text-secondary" href="#">Blog</a>
+                <a class="nav-link" href="?blog">Blog</a>
             </div>
             <div class="nav-item">
-                <a class="nav-link text-secondary" href="#">Nous trouver</a>
+                <a class="nav-link" href="?contact">Nous trouver</a>
             </div>
         </div>
     </nav>
+</div>
+
+<div id="alert_error_search" style="display: none;" class="alert alert-warning">
+    Erreur lors de la recherche
 </div>
