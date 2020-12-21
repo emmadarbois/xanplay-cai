@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Gotham Book";
-    src: url("./res/font/Gotham-Book.otf");
+    src: url("../res/font/Gotham-Book.otf");
 }
 
 @font-face {
     font-family: "Gotham Bold";
-    src: url("./res/font/Gotham-Bold.otf");
+    src: url("../res/font/Gotham-Bold.otf");
 }
 
 :root {
