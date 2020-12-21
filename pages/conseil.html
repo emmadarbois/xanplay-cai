@@ -20,7 +20,7 @@
                             <div class="accordion accordion-flush ">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed text-secondary" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
                                             Par message rapide
                                         </button>
                                     </h2>
@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed text-secondary" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                                        <button class="accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
                                             Par téléphone
                                         </button>
                                     </h2>
@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed text-secondary" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                                        <button class="accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
                                             Directement en boutique
                                         </button>
                                     </h2>
@@ -63,7 +63,7 @@
                             <div class="accordion accordion-flush">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed text-secondary" data-bs-toggle="collapse" data-bs-target="#flush-hesitate">
+                                        <button class="accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#flush-hesitate">
                                             Si vous hésitez entre deux jeux
                                         </button>
                                     </h2>
@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed text-secondary" data-bs-toggle="collapse" data-bs-target="#flush-criteria">
+                                        <button class="accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#flush-criteria">
                                             Si vous avez des critères, mais pas le jeu
                                         </button>
                                     </h2>
@@ -83,7 +83,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed text-secondary" data-bs-toggle="collapse" data-bs-target="#flush-crush">
+                                        <button class="accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#flush-crush">
                                             Pour savoir le derier coup de coeur de nos conseillers
                                         </button>
                                     </h2>
@@ -108,7 +108,6 @@
                         <div class="card-header">
                             <h5 class="card-title">Olivier Minne</h5>
                         </div>
-                        <div class="row border-top my-2"></div>
                         <div class="accordion accordion-flush">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -121,34 +120,33 @@
                                         <div class="mb-3">
                                             <form>
                                                 <textarea class="form-control" id="request_message_olivier" rows="3"></textarea>
-                                                <a href="#" class="btn btn-primary" onclick="send_request('request_message_olivier')">Send</a>
+                                                <a href="#" class="btn btn-primary mt-2" onclick="send_request('request_message_olivier')">Send</a>
                                             </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--A card-->
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="card-header">
-                                    <h5 class="card-title">Lucie Detoc</h5>
-                                </div>
-                                <div class="row border-top my-2"></div>
-                                <div class="accordion accordion-flush">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-askHelpTwo">
-                                                Demander conseil par message
-                                            </button>
-                                        </h2>
-                                        <div id="flush-askHelpTwo" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                <div class="mb-3">
-                                                    <form>
-                                                        <textarea class="form-control" id="request_message_lucie" rows="3"></textarea>
-                                                        <a href="#" class="btn btn-primary" onclick="send_request('request_message_lucie')">Send</a>
-                                                    </form>
-                                                </div>
-                                            </div>
+                        </div>
+                    </div>
+                    <!--A card-->
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="card-header">
+                            <h5 class="card-title">Lucie Detoc</h5>
+                        </div>
+                        <div class="accordion accordion-flush">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-askHelpTwo">
+                                        Demander conseil par message
+                                    </button>
+                                </h2>
+                                <div id="flush-askHelpTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <div class="mb-3">
+                                            <form>
+                                                <textarea class="form-control" id="request_message_lucie" rows="3"></textarea>
+                                                <a href="#" class="btn btn-primary mt-2" onclick="send_request('request_message_lucie')">Send</a>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -156,3 +154,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
