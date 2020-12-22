@@ -7,13 +7,13 @@ document.addEventListener("pageViewRendered", () => {
 
 
     if (ladate.getDate()%3 == 0){
-        promo("7 Wonders<br><br>42,99 € --> 34,39 €","../res/img/jeux/7-wonders.jpg",4,80);
+        promo("7 Wonders<br><br>42,99 € --> 34,39 €","./res/img/jeux/7-wonders.jpg",4,80);
     }
     else if (ladate.getDate()%3 == 1) {
-        promo("Blanc Manger Coco<br><br>26,90 € --> 21,52 €","../res/img/jeux/blanc-manger-coco.jpg",5,42);
+        promo("Blanc Manger Coco<br><br>26,90 € --> 21,52 €","./res/img/jeux/blanc-manger-coco.jpg",5,42);
     }
     else {
-        promo("Labyrinthe<br><br>29,99 € --> 23,99 €","../res/img/jeux/labyrinthe.jpg",3,27);
+        promo("Labyrinthe<br><br>29,99 € --> 23,99 €","./res/img/jeux/labyrinthe.jpg",3,27);
     }
 });
 
