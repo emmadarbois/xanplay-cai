@@ -6,18 +6,14 @@
 	</head>
 	<body>
 		<div class="container">
-		  <form action="/recherche/" method="get">
-		    <fieldset>    
-		      <div class="input-group">
-		        <input id="oSaisie" name="oSaisie" type="text" class="form-control" placeholder="Mot(s) clé(s)">
-		        <div class="input-group-append">
-
-		          <!-- <button class="btn btn-primary" type="submit">Recherche</button> -->
-		          <a href="#" class="btn btn-primary active" role="button" title="Lien 1">Rechercher</a>
-		        </div>
-		      </div>
-		    </fieldset> 
-		  </form>
+			<div class="row mt-3"> 
+        		<div class="col-9 ">
+            		<input id="saisie" class="form-control" placeholder="Key Words">
+        		</div>
+        		<div class="col-3">
+          			<button class="btn btn-primary" type="submit" onclick="search('saisie')">Rechercher</button>
+        		</div>    
+    		</div> 
 
 
 		    <div class="row">
