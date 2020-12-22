@@ -1,46 +1,43 @@
-<div class="container">
-    <div class="row">      
+<div class="container text-primary">
+    <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
                     <h1 class="card-title text-center">Bienvenue dans le monde merveilleux de Xan'play</h1>
-                    <p class="card-text">Boutique Xan’play a été crée en 2012 par Olivier Minne. Passionné depuis l’enfance par les jeux de sociétés, 
-                        il a décidé de créer sa propre boutique pour partager avec vous sa soif de plaisir et de découverte de nouveaux jeux. 
-                        Vous trouverez dans cette boutique tout ce dont vous avez besoin pour passer un bon moment avec votre famille ou vos amis.</p>
-                    <p class="card-text">Vous ne trouvez pas un jeu dans notre boutique mais vous voulez quand même l’acheter? N’hésitez pas à nous contacter 
-                         pour qu’on l’ajoute à notre catalogue. Il plaira sûrement à d’autres joueurs comme vous. En espérant que vous trouverez votre bonheur
-                          dans notre boutique en ligne. </p>
+                    <p class="card-text">Boutique Xan’play a été crée en 2012 par Olivier Minne. Passionné depuis l’enfance par les jeux de sociétés, il a décidé de créer sa propre boutique pour partager avec vous sa soif de plaisir et de découverte de nouveaux jeux. Vous
+                        trouverez dans cette boutique tout ce dont vous avez besoin pour passer un bon moment avec votre famille ou vos amis.</p>
+                    <p class="card-text">Vous ne trouvez pas un jeu dans notre boutique mais vous voulez quand même l’acheter? N’hésitez pas à nous contacter pour qu’on l’ajoute à notre catalogue. Il plaira sûrement à d’autres joueurs comme vous. En espérant que vous trouverez
+                        votre bonheur dans notre boutique en ligne. </p>
                     <p class="card-text">Bonne recherche !</p>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="row">
         <div class="col-12 col-lg-6">
-            <div class="card">
+            <div class="card my-1">
                 <div class="card-body">
                     <h3 class="card-title text-center">Les dernières news</h3>
                     <ul class=”list-inline”>
-                        <li class=”list-inline-item”>La boutique a fini son déménagement dans ses nouveaux locaux.
-                             Maintenant on a espace plus grand, donc plus de jeux, donc plus de plaisir !</li>
-                        <li class=”list-inline-item”>Nous avons enfin accueilli Philomène Jolie, notre nouvelle employée, 
-                            pour vous faire découvrir le monde merveilleux des jeux de souciété avec un oeil vif et nouveau</li>
+                        <li class=”list-inline-item”>La boutique a fini son déménagement dans ses nouveaux locaux. Maintenant on a espace plus grand, donc plus de jeux, donc plus de plaisir !</li>
+                        <li class=”list-inline-item”>Nous avons enfin accueilli Philomène Jolie, notre nouvelle employée, pour vous faire découvrir le monde merveilleux des jeux de société avec un oeil vif et nouveau
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="card">
+            <div class="card my-1">
                 <div class="card-body">
                     <h3 class="card-title text-center">Les derniers jeux en boutique</h3>
                     <div class="row">
                         <div class="col-6 text-center">
-                            <a class="stretched-link" href="?goo"></a>
-                            <img src="./res/pigeon-pigeon.jpg" width="135" height="200" alt="Image 1">
+                            <a class="stretched-link" href="?maintenance"></a>
+                            <img src="./res/img/jeux/pigeon-pigeon.jpg" width="135" height="200" alt="Image 1">
                             <p class="card-text">Pigeon Pigeon</p>
                             <p class="card-text">26,90 €</p>
                         </div>
                         <div class="col-6 text-center">
-                            <a class="stretched-link" href="?foo"></a>
-                            <img src="../res/l'aube-des-tribus.jpg" width="188" height="200" alt="Image 2">
+                            <a class="stretched-link" href="?maintenance"></a>
+                            <img src="./res/img/jeux/l'aube-des-tribus.jpg" width="188" height="200" alt="Image 2">
                             <p class="card-text">L'aube des tribus</p>
                             <p class="card-text">44,90 €</p>
                         </div>
@@ -49,36 +46,42 @@
             </div>
         </div>
         <div class="col-12 col-lg-6">
-            <div class="card">
+            <div class="card my-1">
                 <div class="card-body">
                     <h3 class="card-title text-center">La promo de la semaine</h3>
                     <h5 class="card-title text-center">- 20% sur un article aléatoire</h5>
-                    <a class="stretched-link" href="?foo"></a>
+                    <a class="stretched-link" href="?maintenance"></a>
                     <div class="row">
                         <div class="col-6 text-center">
-                            <img src="../res/blanc-manger-coco.jpg" width="188" height="200" alt="Image Promo">
+                            <img id="myImgPromo" width="188" height="200" alt="Image Promo">
                         </div>
                         <div class="col-6 text-center">
-                            <p></p>
-                            <p class="card-text">Blanc Manger Coco</p>
-                            <p class="card-text">26,90 €  --> 21,52 €</p>
-                            <img src="#" width="40" height="30" alt="Note">
-                            <p class="card-text">80 avis</p>
+                            <p class = "card-text text-center" id="nomPrixPromo"></p>
+                            <div>
+                                <span class="fa fa-star" id="star1"></span>
+                                <span class="fa fa-star" id="star2"></span>
+                                <span class="fa fa-star" id="star3"></span>
+                                <span class="fa fa-star" id="star4"></span>
+                                <span class="fa fa-star" id="star5"></span>
+                            </div>
+                            <br>
+                            <p class="card-text" id="avisPromo"><span class="fa fa-comment" style="color: black; font-size: 20px;"></span></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card my-1">
                 <div class="card-body">
                     <h3 class="card-title text-center">Evénements à venir</h3>
                     <ul class=”list-inline”>
-                        <li class=”list-inline-item”>Mercredi 2 décembre: Rendez-vous partage sur les jeux de réflexion</li>
+                        <li class=”list-inline-item”>Mercredi 2 décembre: Rendez-vous partage sur les jeux de réflexion
+                        </li>
                         <li class=”list-inline-item”>Lundi 7 décembre: Arrivée de 2 nouveaux jeux d'aventure</li>
-                        <li class=”list-inline-item”>Mercredi 16 décembre: Rendez-vous partage sur les jeux familiaux</li>
+                        <li class=”list-inline-item”>Mercredi 16 décembre: Rendez-vous partage sur les jeux familiaux
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
