@@ -5,8 +5,8 @@
 		<title></title>
 	</head>
 	<body>
-		<div class="container">
-			<div class="row mt-3"> 
+		<div class="container"> <!-- container principal -->
+			<div class="row mt-3"> <!-- barre de recherche avec bouton -->
         		<div class="col-9 ">
             		<input id="saisie" class="form-control" placeholder="Key Words">
         		</div>
@@ -18,7 +18,7 @@
 		    <div class="row">
 		        <div class="col-4">
 		            <div class="list-group mt-2">
-		            	<div class="list-group-item">
+		            	<div class="list-group-item"> <!-- liste de filtres -->
 		                    <h3 class="card-title text-center">Filtres</h3>
 		                      <p>Type :</p>
 		                      <div class="form-check" id="checkAction" onclick="btn_filter_action()">
@@ -101,7 +101,7 @@
 
 		        <div class="col-6 col-lg-8 ">
 		        	
-		        		<div class="row justify-content-end mt-3">
+		        		<div class="row justify-content-end mt-3"> <!-- selection pour le triage des jeux -->
 				            <form class="">
 				              <select name="trier" class="custom-select-sm">
 				                <option selected>Trier Par</option>
@@ -113,14 +113,15 @@
 		            	</div>
 		            <div class="row">
 			            <div class="list-group pt-2">
+			            	<!-- jeu magic -->
 			            	<div class="list-group-item " id="jeu_magic">
 			                    <div class="row">
 			                        <div class="col-3 text-center">
-			                            <img src="./res/img/jeux/magic.png" width="150" height="150"  >
+			                            <img src="./res/img/jeux/magic.png" width="150" height="150"  > <!-- image du jeu -->
 			                        </div>
 			                        <div class="col-6 text-center">
 			                            <p></p>
-			                            <p class="card-text text-justify">Faites équipe avec un Planeswalker et jetez-vous dans la bataille ! Ce deck de démarrage de 60 cartes Magic: The Gathering (MTG) est prêt-à-jouer dès l'ouverture de la boîte. </p>
+			                            <p class="card-text text-justify">Faites équipe avec un Planeswalker et jetez-vous dans la bataille ! Ce deck de démarrage de 60 cartes Magic: The Gathering (MTG) est prêt-à-jouer dès l'ouverture de la boîte. </p> <!-- dscription-->
 			                        </div>
 			                        <div class="col-3 text-center">
 			                            <p></p>
@@ -130,11 +131,13 @@
 		                                    <span class="fa fa-star star-on"></span>
 		                                    <span class="fa fa-star star-on"></span>
 		                                    <span class="fa fa-star star-off"></span>
-		                                </div>
-			                            <p class="card-text"><span class="fa fa-comment" style="color: black; font-size: 20px;"></span> 27 avis</p>
+		                                </div> <!-- nombre d'étoiles-->
+			                            <p class="card-text"><span class="fa fa-comment" style="color: black; font-size: 20px;"></span> 27 avis</p> 
+			                            <!-- nombre avis + icone avis-->
 			                        </div>
 			                    </div>
 			                </div>
+			                <!-- jeu bang -->
 			                <div class="list-group-item" id="jeu_bang">
 			                    <div class="row">
 			                        <div class="col-3 text-center">
@@ -158,6 +161,7 @@
 			                        </div>
 			                    </div>
 			                </div>
+			                <!-- jeu l'aube des tribus-->
 			                <div class="list-group-item " id="jeu_adt">
 			                    <div class="row">
 			                        <div class="col-3 text-center">
@@ -181,6 +185,7 @@
 			                        </div>
 			                    </div>
 			                </div>
+			                <!-- jeu blanc manger coco-->
 			                <div class="list-group-item " id="jeu_bmc">
 			                    <div class="row">
 			                        <div class="col-3 text-center">
@@ -205,6 +210,7 @@
                             		</div>
 			                    </div>
 			                </div>
+			                <!-- jeu catan -->
 			                <div class="list-group-item" id="jeu_catan">
 			                    <div class="row">
 			                        <div class="col-3 text-center">
@@ -227,6 +233,7 @@
 			                        </div>
 			                    </div>
 			                </div>
+			                <!-- jeu oui seigneur des tenebre-->
 			                <div class="list-group-item" id="jeu_osdt">
 			                    <div class="row">
 			                        <div class="col-3 text-center">
@@ -250,8 +257,9 @@
 			                        </div>
 			                    </div>
 			                </div>
+			                <!-- jeu memoire 44-->
 			                <div class="list-group-item" id="jeu_memoire44">
-			                    <a class="stretched-link" href="?foo"></a>
+			                    <a class="stretched-link" href="?jeu"></a>
 			                    <div class="row">
 			                        <div class="col-3 text-center">
 			                            <img src="./res/img/jeux/memoire44.jpeg" width="150" height="150">
@@ -274,6 +282,7 @@
 			                        </div>
 			                    </div>
 			                </div>
+			                <!-- jeu pigeon pigeon-->
 			                <div class="list-group-item " id="jeu_pp">
 			                    <div class="row">
 			                        <div class="col-3 text-center">
@@ -297,6 +306,7 @@
 			                        </div>
 			                    </div>
 			                </div>
+			                <!-- jeu alien-->
 			                 <div class="list-group-item " id="jeu_alien">
 			                    <div class="row">
 			                        <div class="col-3 text-center">
@@ -319,6 +329,7 @@
 			                        </div>
 			                    </div>
 			                </div>
+			                <!-- jeu mafia-->
 			                <div class="list-group-item " id="jeu_mafia">
 			                    <div class="row">
 			                        <div class="col-3 text-center">
